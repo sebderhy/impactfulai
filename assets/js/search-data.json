@@ -29,7 +29,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
+          "content": ". My name is Sebastien Derhy, I am originally from France (Paris), but live in Tel-Aviv since July 2014. I’ve always been passionate about the intersection between technology (in particular deep learning and computer vision), research, and business. This is the reason I created this blog. . I am currently work as an Applied AI Scientist at Datagen, a startup helping computer vision scientists work seamlessly in a data-centric R&amp;D cycle using synthetic data. . My other past experiences include: . Navigation Intelligence Team Leader at Via Transportation | Algorithm Team Leader at Samsung Israel Research Center | COO &amp; Co-founder of Fitterli, a startup that aimed at leveraging depth cameras in smartphones for online shopping | VC Analyst at Elaia Partners, one of the leading European VCs. In particular first investor in Criteo (NASDAQ: CRTO) | Visiting Researcher at the Technion, where I worked at the GIP lab under the supervision of Ron Kimmel on a Gesture-based Tetris game. | . I hold an MSc in Applied Mathematics from Ecole Polytechnique and an MSc in Entrepreneurship from HEC. .",
           "url": "https://sebderhy.github.io/impactfulai/about/",
           "relUrl": "/about/",
           "date": ""
