@@ -101,9 +101,7 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image6.png" alt="" /></p>
-
-<h1 id="introduction">Introduction</h1>
+    <p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image5.png" alt="" /></p>
 
 <p>One of the most important principles of the <a href="http://theleanstartup.com/principles"><span class="underline">Lean Startup methodology</span></a> is “fail fast”. No one wants to fail, but failing rapidly makes it less painful, and more importantly, leaves more time and resources to try something new until success.</p>
 
@@ -135,6 +133,8 @@ window.onload = wrap_img;
 
 <h1 id="risk-1-problem-fit">Risk #1: Problem Fit</h1>
 
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image7.jpg" alt="" /></p>
+
 <p>As explained in <a href="https://sebderhy.github.io/impactfulai/2021/11/01/Fall-in-love-with-the-problem,-not-the-solution.html"><span class="underline">my previous post</span></a>, one of the most important risks of failure of an AI project is to build a “<a href="https://www.ycombinator.com/library/8g-how-to-get-startup-ideas"><span class="underline">Solution In Search of a Problem</span></a>”. It can happen for many reasons: we may have been over-excited by a new paper or AI technique, and somehow managed to convince ourselves that it would solve our problem, or we may just have an incomplete understanding of the problem because we didn’t talk with the right people at the right time.</p>
 
 <p>In my opinion, the easiest way to reduce this risk is to sit with the people who really feel this problem, and really understand their needs. If you can’t easily access your customers, product managers or sales people may be a great proxy to understand what you need to solvem, and the constraints your solution should respect. By doing these conversations, you’ll be able to:</p>
@@ -161,19 +161,17 @@ window.onload = wrap_img;
 
 <h1 id="risk-2-data-fit">Risk #2: Data Fit</h1>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image3.png" alt="" /></p>
-
 <p>We hear all the time that “AI is all about data”, but people often tend to focus on data quantity rather than quality. Of course, you cannot do much without a decent amount of data, but <strong>it’s usually much less than people think</strong> (I’ve found that in many cases, ~1000 data points are enough to start getting results). On the other hand, <strong>data quality and variance is key to success in AI projects</strong>. More specifically, you need to have data (for training, but most importantly for testing) that reflects as closely as possible the cases you want to handle in production (including corner cases), but which also contains enough variance so that the AI model can learn to extract the patterns that really matter in your data.</p>
 
 <p>However, getting the perfect “data fit” for your problem in one iteration is an almost impossible task. This is why many machine learning teams are now adopting a new methodology called “<a href="https://www.forbes.com/sites/forbestechcouncil/2021/12/03/the-onset-of-data-centric-ai-and-why-its-here-to-stay/?sh=554b9e1469cc"><span class="underline">Data-Centric AI</span></a>”, where they basically try to remove as much as possible the friction to acquiring new data (using for example <a href="https://app.livestorm.co/datagen/implementing-data-centric-methodology-with-synthetic-data?type=detailed"><span class="underline">synthetic data</span></a>). While the term has been popularized by <a href="https://www.forbes.com/sites/gilpress/2021/06/16/andrew-ng-launches-a-campaign-for-data-centric-ai/?sh=3c5bddba74f5"><span class="underline">Andrew Ng</span></a>, most advanced companies in AI have been practicing this methodology for years now. A fascinating example of such methodology implementation is Tesla and their “<a href="https://gradientdescent.co/t/the-tesla-ai-team-s-data-engine/48"><span class="underline">Data Engine</span></a>”, which is shown below. Actually, this topic is such a game-changer in the world of AI that I’ll probably dedicate a future blog post about it later.</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image5.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image3.png" alt="" /></p>
 
 <p>Source: slide from Andrej Karpathy’s (Tesla’s Director of AI) <a href="https://youtu.be/Ucp0TTmvqOE?t=7714"><span class="underline">presentation</span></a> at Tesla 2019 Autonomy Day</p>
 
 <h1 id="risk-3-integration-with-other-teams">Risk #3: Integration with Other Teams</h1>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image7.jpg" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image6.jpg" alt="" /></p>
 
 <h2 id="plant-a-flag-on-the-roadmap">Plant a flag on the roadmap</h2>
 
@@ -234,11 +232,11 @@ window.onload = wrap_img;
 
 <h1 id="risk-4-research">Risk #4: Research</h1>
 
-<p>This is the risk only you can reduce. During the research phase, you’ll need to break your problems into subproblems, and find ways to solve each of them. Unfortunately, both of those tasks could be very hard, and this is where you’ll get to express all your AI and research talent. Exciting and scary at the same time right? Even though there is unfortunately no magic formula here, below are a few tips from my experience to assess the level of risks involved with a problem or subproblem.</p>
+<p>This is the risk <strong>only you</strong> can reduce. During the research phase, you’ll need to break your problems into subproblems, and find ways to solve each of them. Unfortunately, both of those tasks could be very hard, and this is where you’ll get to express all your AI and research talent. Exciting and scary at the same time right? Even though there is unfortunately no magic formula here, below are a few tips from my experience to assess the level of risks involved with a problem or subproblem.</p>
 
-<h2 id="start-with-the-end">Start with the end</h2>
+<h2 id="begin-with-the-end">Begin with the end</h2>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image1.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image2.png" alt="" /></p>
 
 <p>If your AI pipeline is split into several parts, you should start by solving the LAST part, and then progress backwards in the pipeline to solve each block. This may seem counterintuitive, but the reasons behind this principle are actually quite simple:</p>
 
@@ -259,11 +257,11 @@ window.onload = wrap_img;
 
 <h2 id="look-at-things-from-a-different-angle">Look at things from a different angle</h2>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image2.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2021-12-05-Fail-Fast,-Think-First/media/image1.png" alt="" /></p>
 
 <p>Sometimes, we can solve a problem by looking at it from a different and original perspective, typically by mathematically modeling things differently. For example, we can represent a surface quite naturally as a set of connected points in 3D (this is called a <a href="https://en.wikipedia.org/wiki/Polygon_mesh"><span class="underline">polygon mesh</span></a>), but we could also represent it as the 0 level set of a very smooth function of the 3D space f(x,y,z) = <a href="https://en.wikipedia.org/wiki/Signed_distance_function"><span class="underline">distance (potentially signed) of the point (x,y,z) to this surface</span></a>. This representation was one of the core ideas behind the paper <a href="https://www.youtube.com/watch?v=KOUSSlKUJ-A"><span class="underline">Kinect Fusion</span></a>, one of the most impactful papers in the world of 3D scanning and localization. This representation inspired the more recent breakthrough paper <a href="https://www.youtube.com/watch?v=JuH79E8rdKc"><span class="underline">NeRF</span></a> (although their representation is a bit different), which is able to render very realistic new views of a scene from several input views.</p>
 
-<h2 id="pave-development-milestones-with-releases">Pave development milestones with releases</h2>
+<h2 id="map-research-risks-to-release-versions">Map research risks to release versions</h2>
 
 <p>Once you have an initial assessment of the research risks of your project, try to sit again with the product team, and map them into a roadmap of feature releases. Ideally, you’d like to arrive at something like this:</p>
 
