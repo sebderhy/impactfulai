@@ -92,7 +92,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      20 min read
+      21 min read
     
 </span></p>
 
@@ -113,7 +113,7 @@ window.onload = wrap_img;
 
 <p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image5.png" alt="" /></p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
 
 <p>Even though the concept of DCAI is quite easy to grasp, <strong>I do think the implementation of DCAI in practice is far from obvious</strong>, so I want to discuss in this blog post the actual steps involved to make a successful DCAI project, and explain how it will change our job as AI/data scientists (non-related note: please forgive my lack of consistency in job titles, there’s unfortunately no standard across the industry). Basically, I want to answer the following questions:</p>
 
@@ -227,12 +227,12 @@ window.onload = wrap_img;
   </li>
   <li>
     <blockquote>
-      <p>Services like <a href="https://scale.com/"><span class="underline">scale.com</span></a> or <a href="https://aws.amazon.com/sagemaker/data-labeling/"><span class="underline">Amazon Sagemaker</span></a> have significantly streamlined the labeling process. Things like finding labelers to work on your data, creating labeling redundancy (to improve labeling consistency), and managing data are now much easier.</p>
+      <p><strong>The data labeling process has been considerably streamlined</strong> by products such as <a href="https://scale.com/"><span class="underline">scale.com</span></a>, <a href="https://aws.amazon.com/sagemaker/data-labeling/"><span class="underline">Amazon Sagemaker</span></a>, or <a href="https://dataloop.ai/"><span class="underline">Dataloop</span></a>. Things like finding labelers to work on your data, creating labeling redundancy (to improve labeling consistency), and managing data are now much easier.</p>
     </blockquote>
   </li>
   <li>
     <blockquote>
-      <p>Most importantly, the rise of <a href="https://datagen.tech/"><span class="underline">synthetic data</span></a> (computer-generated data) is a complete game-changer for the world of AI (in particular computer vision). This type of data enables companies to acquire realistic data with perfect labels and perfect control, at a fraction of the time (and cost) it takes to acquire real data. It has also been proven (in particular by <a href="https://datagen.tech/ai/facial-landmark-detection-using-synthetic-data/"><span class="underline">Datagen</span></a> and <a href="https://microsoft.github.io/FaceSynthetics/"><span class="underline">Microsoft</span></a>) that synthetic data can significantly reduce the amount of real data you need to train a model. In practice, synthetic data gives a real superpower to AI scientists: being able to create the data they need.</p>
+      <p><strong>The rise of <a href="https://datagen.tech/"><span class="underline">synthetic data</span></a> (computer-generated data) is a complete game-changer</strong> for the world of AI (in particular computer vision). This type of data enables companies to acquire realistic data with perfect labels and perfect control, at a fraction of the time (and cost) it takes to acquire real data. It has also been proven (in particular by <a href="https://datagen.tech/ai/facial-landmark-detection-using-synthetic-data/"><span class="underline">Datagen</span></a> and <a href="https://microsoft.github.io/FaceSynthetics/"><span class="underline">Microsoft</span></a>) that synthetic data can significantly reduce the amount of real data you need to train a model. In practice, synthetic data gives a real superpower to AI scientists: being able to create the data they need.</p>
     </blockquote>
   </li>
 </ul>
@@ -241,7 +241,7 @@ window.onload = wrap_img;
 
 <p>Let’s now address the second question mentioned at the beginning of the paragraph:</p>
 
-<h1 id="is-acquiring-data-part-of-an-ai-scientists-job">Is acquiring data part of an AI scientist’s job?</h1>
+<h1 id="is-acquiring-data-part-of-an-ai-scientists-job-">Is acquiring data part of an AI scientist’s job? <img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></h1>
 
 <p>If you read the previous paragraph carefully, you probably already have the answer. A few years ago, acquiring data used to be an OPERATIONAL job, and had therefore no reason to be handled by an AI scientist (who would probably have done a very poor job anyway ^^).</p>
 
@@ -253,7 +253,7 @@ window.onload = wrap_img;
 
 <p>Ok, all this sounds very cool, but what does it mean in practice? If my job is not so much to train models anymore, what should I do then? How does this DCAI methodology get implemented in practice and what is our role in it as scientists?</p>
 
-<p>(Rest assured, you will see that your scientific skills are critical to the success of a DCAI project !)</p>
+<p>(Rest assured, you will see that your scientific skills are critical to the success of a DCAI project!)</p>
 
 <h2 id="step-1-carefully-engineer-your-test-sets">Step #1: Carefully engineer your test setS!!</h2>
 
@@ -276,11 +276,11 @@ window.onload = wrap_img;
   </li>
 </ol>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.png" alt="" /></p>
 
 <p>Source: slide from Andrej Karpathy’s (Tesla’s Director of AI) <a href="https://youtu.be/Ucp0TTmvqOE?t=7714"><span class="underline">presentation</span></a> at Tesla 2019 Autonomy Day</p>
 
-<h2 id="step-2-get-your-e2e-data-centric-pipeline-running">Step #2: Get your e2e data-centric pipeline running</h2>
+<h2 id="step-2-get-your-end-to-end-data-centric-pipeline-running">Step #2: Get your end-to-end data-centric pipeline running</h2>
 
 <h3 id="finish-your-test-environment">Finish your test environment</h3>
 
@@ -289,17 +289,17 @@ window.onload = wrap_img;
 <ol>
   <li>
     <blockquote>
-      <p>Proper metrics that describe the trade-offs you’ll need to make in production (for example, execution time vs accuracy). And yes, there ARE ALWAYS trade-offs.</p>
+      <p><strong>Proper metrics that describe the trade-offs</strong> you’ll need to make in production (for example, execution time vs accuracy). And yes, there ARE ALWAYS trade-offs.</p>
     </blockquote>
   </li>
   <li>
     <blockquote>
-      <p>Debug visualizations that show things that your metrics cannot quantify, if possible in a way that allows you to understand the problem more specifically. For example, if you build an image denoising algorithm, you should have a visualization of the inputs/outputs/ground truths side-by-side so that you can compare them and detect artifacts such as blur.</p>
+      <p><strong>Debug visualizations</strong> that show things that your metrics cannot quantify, if possible in a way that allows you to understand the problem more specifically. For example, if you build an image denoising algorithm, you should have a visualization of the inputs/outputs/ground truths side-by-side so that you can compare them and detect artifacts such as blur.</p>
     </blockquote>
   </li>
   <li>
     <blockquote>
-      <p>A one-push-button system (e.g. python script) to evaluate any given method according to all of the points described above.</p>
+      <p><strong>A one-push-button system</strong> (e.g. python script) to evaluate any given method according to all of the points described above.</p>
     </blockquote>
   </li>
 </ol>
@@ -309,7 +309,7 @@ window.onload = wrap_img;
 
 <h3 id="build-your-baseline">Build your baseline</h3>
 
-<p>In order to finish your end-to-end data-centric pipeline, you also need a baseline, i.e. the quickest solution you can find to your problem that can be evaluated in your environment. I talked about this more in depth in my first post “<a href="https://sebderhy.github.io/impactfulai/2021/11/01/Fall-in-love-with-the-problem,-not-the-solution.html"><span class="underline">Fall in love with the problem</span></a>”, but it’s worth saying it again: your baseline SHOULD NOT take you a long time to build, and SHOULD NOT give good performances. The goal is to check that all the blocks of your pipeline are integrated, and to be able to “appreciate” the quality of the results you’ll get when you will use more complex solutions. Very often, you actually don’t even need a training set to build a baseline: you can either go for non-ML solutions, or leverage the ocean of open-source code available online.</p>
+<p>In order to finish your end-to-end data-centric pipeline, you also need a baseline, i.e. <strong>the quickest solution you can find to your problem</strong> that can be evaluated in your environment. I talked about this more in depth in my first post “<a href="https://sebderhy.github.io/impactfulai/2021/11/01/Fall-in-love-with-the-problem,-not-the-solution.html"><span class="underline">Fall in love with the problem</span></a>”, but it’s worth saying it again: your baseline SHOULD NOT take you a long time to build, and SHOULD NOT give good performances. The goal is to check that all the blocks of your pipeline are integrated, and to be able to “appreciate” the quality of the results you’ll get when you will use more complex solutions. Very often, you actually don’t even need a training set to build a baseline: you can either go for non-ML solutions, or leverage the ocean of open-source code available online.</p>
 
 <p>Ok, now that you have your end-to-end pipeline running, it is time to improve on your baseline, and this is where things will spice up from an algorithmic perspective.</p>
 
@@ -322,6 +322,8 @@ window.onload = wrap_img;
 <p>Surprisingly, I did not find a lot of academic papers answering the question “What are the 2-3 main characteristics in my data that cause my network to fail”. As far as I can see, there are 3 potential approaches there:</p>
 
 <h3 id="deploy-the-algorithm-in-shadow-mode">Deploy the algorithm in shadow mode</h3>
+
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" alt="" /></p>
 
 <p>Even though your baseline is far from robust enough, it may be a good idea to put it in production in “shadow mode”, meaning that its predictions will not affect anything, but you’ll be able to gather a lot of data and monitor the kind of corner cases you’ll have to face. Here is a quick table of pros &amp; cons for this method:</p>
 
@@ -370,7 +372,7 @@ window.onload = wrap_img;
 
 <p>Unfortunately, in many cases, you won’t know beforehand the characteristics of your data that are causing a network to fail. Ideally, we would like to have a toolbox that analyzes the model’s performances, and gives us actionable insights on how to improve them.</p>
 
-<p>While the academic literature is relatively scarce on this topic, I came across a few very interesting works recently:</p>
+<p>While the academic literature is relatively scarce on this topic, here are 2 interesting works I came across recently:</p>
 
 <ul>
   <li>
@@ -380,7 +382,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.gif" alt="" /><br />
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image11.gif" alt="" /><br />
 Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discovered disentangled attributes which explain the classification. Moving each knob manipulates only the corresponding attribute in the image, keeping other attributes of the subject fixed. Source: <a href="https://ai.googleblog.com/2022/01/introducing-stylex-new-approach-for.html"><span class="underline">Google’s blog post</span></a></p>
 
 <ul>
@@ -391,19 +393,19 @@ Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discover
   </li>
 </ul>
 
-<p>As part of my research at Datagen, I’ve also developed such a method to detect neural networks failure modes in an unstructured way. I developed a method based on a <a href="https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73"><span class="underline">Variational Auto-Encoder</span></a> that can transform an input failure case into the closest image that would make the network succeed. When tested on the facial landmarks detection task (on the 300W dataset), we observed that it was removing glasses from people, and transformed babies into grown-up faces.</p>
+<p>As part of my work at Datagen, I’ve also developed such a method to detect neural networks failure modes in an unstructured way. More precisely, I built a <a href="https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73"><span class="underline">Variational Auto-Encoder</span></a> that can transform an input failure case into the closest image that would make the network succeed. When trained and tested on the facial landmarks detection task (on the <a href="https://ibug.doc.ic.ac.uk/resources/300-W/"><span class="underline">300W dataset</span></a>), we observed for example that the VAE was removing glasses from people, and transformed babies into grown-up faces, hinting that the network has more difficulties dealing with babies and people with glasses.</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image10.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" alt="" /></p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /></p>
 
-<p>(As you may know, one of the famous problems with VAEs is that they create blurry pictures, as can be seen above. While this may be an issue in many cases, it is not in our “debugging” case, because it doesn’t bother us when understanding what’s wrong)</p>
+<p>(As you may know, one of the famous problems with VAEs is that they create blurry pictures, as can be seen above. While this may be an issue in many cases, it is not in our “debugging” case, because these images are meant to be interpretable, not beautiful).</p>
 
 <h2 id="step-4-gather-the-new-data-and-adapt-your-training-pipeline">Step #4: Gather the new data and adapt your training pipeline</h2>
 
 <p>Once you’ve identified the type of data you need, you need to gather more of this data. This is typically where things may get harder: if you need real data, you may need to write a long list of precise requirements, and wait for 6 months until you get the new dataset back. This is exactly why I believe synthetic data is going to be a revolution. You can now use platforms like <a href="https://datagen.tech/"><span class="underline">Datagen</span></a> to create data with the exact characteristics of your failure cases, and a lot of variance on everything else.</p>
 
-<p>However, keep in mind that your training procedure may need to be adapted if you have a new dataset. In particular, if you use synthetic data, both our team at <a href="https://datagen.tech/ai/facial-landmark-detection-using-synthetic-data/"><span class="underline">Datagen</span></a> and <a href="https://microsoft.github.io/FaceSynthetics/"><span class="underline">Microsoft</span></a> observed that 2 important changes need to happen in your training procedure:</p>
+<p>However, keep in mind that your training procedure may need to be adapted if you have a new dataset. In particular, if you use synthetic data, both <a href="https://datagen.tech/ai/facial-landmark-detection-using-synthetic-data/"><span class="underline">our team</span></a> and <a href="https://microsoft.github.io/FaceSynthetics/"><span class="underline">Microsoft</span></a> observed that 2 important changes need to happen in your training procedure:</p>
 
 <ul>
   <li>
