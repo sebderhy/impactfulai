@@ -6,9 +6,9 @@ permalink: /about/
 
 <img src="{{site.baseurl}}/images/sebpic.jpg" alt="Seb's pic" width="200"/>
 
-My name is Sebastien Derhy, I am originally from France (Paris), but live in Tel-Aviv since July 2014. I've always been passionate about the intersection between technology (in particular deep learning and computer vision), research, and business. This is one of the reasons creating this blog was so important to me. 
+My name is Sebastien Derhy, I am originally from Paris, but live in Tel-Aviv since July 2014. I've always been passionate about the intersection between technology (in particular deep learning and computer vision), research, and business. This is one of the reasons creating this blog was so important to me. 
 
-I am currently leading Algorithms at [Datagen](http://datagen.tech/), a startup helping computer vision scientists work seamlessly in a data-centric R&D cycle using synthetic data.
+I am currently Lead Applied Scientist at [Datagen](http://datagen.tech/), a startup helping computer vision scientists work seamlessly in a data-centric R&D cycle using synthetic data.
 
 My past experiences include:
 
