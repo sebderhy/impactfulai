@@ -109,9 +109,9 @@ window.onload = wrap_img;
 
 <p>In this blog post, I do not want to explain the concepts behind DCAI in detail, since you can easily learn them from the links above. So before diving into the core ideas of this blog post, here is below the main idea of DCAI, so that you can continue reading even if you are not familiar with the field:</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image5.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
 
 <p>Even though the concept of DCAI is quite easy to grasp, <strong>I do think the implementation of DCAI in practice is far from obvious</strong>, so I want to discuss in this blog post the actual steps involved to make a successful DCAI project, and explain how it will change our job as AI/data scientists (non-related note: please forgive my lack of consistency in job titles, there’s unfortunately no standard across the industry). Basically, I want to answer the following questions:</p>
 
@@ -239,7 +239,7 @@ window.onload = wrap_img;
 
 <p>Let’s now address the second question mentioned at the beginning of the paragraph:</p>
 
-<h1 id="is-acquiring-data-part-of-an-ai-scientists-job-">Is acquiring data part of an AI scientist’s job? <img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></h1>
+<h1 id="is-acquiring-data-part-of-an-ai-scientists-job-">Is acquiring data part of an AI scientist’s job? <img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" alt="" /></h1>
 
 <p>If you read the previous paragraph carefully, you probably already have the answer. A few years ago, acquiring data used to be an OPERATIONAL job, and had therefore no reason to be handled by an AI scientist (who would probably have done a very poor job anyway ^^).</p>
 
@@ -274,7 +274,7 @@ window.onload = wrap_img;
   </li>
 </ol>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image10.png" alt="" /></p>
 
 <p>Source: slide from Andrej Karpathy’s (Tesla’s Director of AI) <a href="https://youtu.be/Ucp0TTmvqOE?t=7714"><span class="underline">presentation</span></a> at Tesla 2019 Autonomy Day</p>
 
@@ -321,7 +321,7 @@ window.onload = wrap_img;
 
 <h3 id="deploy-the-algorithm-in-shadow-mode">Deploy the algorithm in shadow mode</h3>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /></p>
 
 <p>Even though your baseline is far from robust enough, it may be a good idea to put it in production in “shadow mode”, meaning that its predictions will not affect anything, but you’ll be able to gather a lot of data and monitor the kind of corner cases you’ll have to face. Here is a quick table of pros &amp; cons for this method:</p>
 
@@ -398,16 +398,16 @@ Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discover
 <tr class="header">
 <th>Input<br />
 (Failure case of landmarks detection)</th>
-<th><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image10.png" style="width:1.83854in;height:1.83854in" /></th>
-<th><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" style="width:1.84896in;height:1.84896in" /></th>
+<th><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.png" style="width:1.83854in;height:1.83854in" /></th>
+<th><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image5.png" style="width:1.84896in;height:1.84896in" /></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Output<br />
 (similar input on which the network would have performed better)</td>
-<td><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.png" style="width:1.84896in;height:1.84896in" /></td>
-<td><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" style="width:1.8556in;height:1.8556in" /></td>
+<td><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" style="width:1.84896in;height:1.84896in" /></td>
+<td><img src="assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" style="width:1.8556in;height:1.8556in" /></td>
 </tr>
 </tbody>
 </table>
