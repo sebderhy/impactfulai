@@ -103,15 +103,15 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p>How many times have we heard sentences such as “<a href="https://www.theguardian.com/technology/2013/aug/23/tech-giants-data"><span class="underline">Data is the new oil</span></a>” or “<a href="https://www.predicthq.com/blog/data-is-to-ai-as-food-is-to-humans"><span class="underline">Data is food for AI</span></a>”? Even though there is some truth to these catchphrases (after all, we data scientists/AI scientists <a href="https://www.datanami.com/2020/07/06/data-prep-still-dominates-data-scientists-time-survey-finds/"><span class="underline">do spend most of our time on the data</span></a>), the vast majority of academic AI papers still revolve around new approaches that improve x% on famous dataset benchmarks such as <a href="https://www.image-net.org/"><span class="underline">ImageNet</span></a>. Even in the industry, <strong>most data scientists often get their data as a given constraint for the problem they need to solve, and not as a variable they can optimize to better solve their task at hand</strong>.</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image8.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image10.png" alt="" /></p>
 
 <p>The idea to prioritize data over algorithms is not new. Actually, most leading AI companies (for example Tesla) are designing their AI workflows specifically to optimize data acquisition and tagging, However, <strong>this idea has been brilliantly <a href="https://www.youtube.com/watch?v=06-AZXmwHjo&amp;ab_channel=DeepLearningAI"><span class="underline">reintroduced and explained by Andrew Ng</span></a> in March 2021, and this is where (as far as I know) the term Data-centric AI (DCAI) was coined for the first time</strong>. Since Ng’s presentation, more and more people are joining forces to make AI more data-focused. Actually, <a href="https://datacentricai.org/blog/autodc-automated-data-centric-processing/"><span class="underline">a great hub</span></a> was recently created to gather the most important resources and breakthroughs on this topic.</p>
 
 <p>In this blog post, I do not want to explain the concepts behind DCAI in detail, since you can easily learn them from the links above. So before diving into the core ideas of this blog post, here is below the main idea of DCAI, so that you can continue reading even if you are not familiar with the field:</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image5.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /></p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
 
 <p>Even though the concept of DCAI is quite easy to grasp, <strong>I do think the implementation of DCAI in practice is far from obvious</strong>, so I want to discuss in this blog post the actual steps involved to make a successful DCAI project, and explain how it will change our job as AI/data scientists (non-related note: please forgive my lack of consistency in job titles, there’s unfortunately no standard across the industry). Basically, I want to answer the following questions:</p>
 
@@ -239,7 +239,7 @@ window.onload = wrap_img;
 
 <p>Let’s now address the second question mentioned at the beginning of the paragraph:</p>
 
-<h1 id="is-acquiring-data-part-of-an-ai-scientists-job-">Is acquiring data part of an AI scientist’s job? <img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image10.png" alt="" /></h1>
+<h1 id="is-acquiring-data-part-of-an-ai-scientists-job-">Is acquiring data part of an AI scientist’s job? <img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image5.png" alt="" /></h1>
 
 <p>If you read the previous paragraph carefully, you probably already have the answer. A few years ago, acquiring data used to be an OPERATIONAL job, and had therefore no reason to be handled by an AI scientist (who would probably have done a very poor job anyway ^^).</p>
 
@@ -274,7 +274,7 @@ window.onload = wrap_img;
   </li>
 </ol>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image11.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></p>
 
 <p>Source: slide from Andrej Karpathy’s (Tesla’s Director of AI) <a href="https://youtu.be/Ucp0TTmvqOE?t=7714"><span class="underline">presentation</span></a> at Tesla 2019 Autonomy Day</p>
 
@@ -321,7 +321,7 @@ window.onload = wrap_img;
 
 <h3 id="deploy-the-algorithm-in-shadow-mode">Deploy the algorithm in shadow mode</h3>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image8.png" alt="" /></p>
 
 <p>Even though your baseline is far from robust enough, it may be a good idea to put it in production in “shadow mode”, meaning that its predictions will not affect anything, but you’ll be able to gather a lot of data and monitor the kind of corner cases you’ll have to face. Here is a quick table of pros &amp; cons for this method:</p>
 
@@ -380,7 +380,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image12.gif" alt="" /><br />
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image11.gif" alt="" /><br />
 Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discovered disentangled attributes which explain the classification. Moving each knob manipulates only the corresponding attribute in the image, keeping other attributes of the subject fixed. Source: <a href="https://ai.googleblog.com/2022/01/introducing-stylex-new-approach-for.html"><span class="underline">Google’s blog post</span></a></p>
 
 <ul>
@@ -393,7 +393,7 @@ Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discover
 
 <p>As part of my work at Datagen, I’ve also developed such a method to detect neural networks failure modes in an unstructured way. More precisely, I built a <a href="https://towardsdatascience.com/understanding-variational-autoencoders-vaes-f70510919f73"><span class="underline">Variational Auto-Encoder</span></a> that can transform an input failure case into the most similar image that would make the network succeed. When trained and tested on the facial landmarks detection task (on the <a href="https://ibug.doc.ic.ac.uk/resources/300-W/"><span class="underline">300W dataset</span></a>), we observed for example that the VAE was removing glasses from people, and transformed babies into grown-up faces, hinting that the network has more difficulties dealing with babies and people with glasses.</p>
 
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image3.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image1.png" alt="" /></p>
+<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image9.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image6.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image7.png" alt="" /><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image2.png" alt="" /></p>
 
 <p>(As you may know, one of the famous problems with VAEs is that they create blurry pictures, as can be seen above. While this may be an issue in many cases, it is not in our “debugging” case, because these images are meant to be interpretable, not beautiful).</p>
 
@@ -486,7 +486,7 @@ Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discover
 
 <h1 id="long-term-ai-powered-data-centric-ai">Long-term: AI-powered data-centric AI</h1>
 
-<p>At the end of the day, if figuring out the optimal data you need to solve a task is such a hard algorithmic task, maybe it would make sense to build a complete closed-loop system (some kind of next-gen <a href="https://www.automl.org/"><span class="underline">AutoML</span></a>) that not only optimizes your model’s hyperparameters, but also the data it gets fed with.</p>
+<p>At the end of the day, the whole concept of data-centric AI is to engineer the data you need to optimize the performances of your machine learning model in real-life. However, as we saw, figuring out the optimal data you need to solve a task, and how to adapt your training procedure to this data, are very hard algorithmic tasks. Therefore, I believe that the future of data-centric AI is to build a complete closed-loop system (some kind of next-gen <a href="https://www.automl.org/"><span class="underline">AutoML</span></a>) that not only optimizes your model’s hyperparameters, but also the data it gets fed with.</p>
 
 <p>If you think about this for a second, this idea is actually very comparable to how a child learns. Of course, a child’s brain learns very quickly and efficiently from any data it comes across. However, the data he or she receives is not random at all: it is carefully selected by people who care for the child more than anyone else in the world, and are also (hopefully) themselves very smart: his parents.</p>
 
@@ -504,16 +504,6 @@ Explaining a Cat vs. Dog Classifier: StylEx provides the top-<em>K</em> discover
     </blockquote>
   </li>
 </ul>
-
-<p>Unfortunately, here again, the scientific literature on these questions (especially MLOps) is quite scarce, but an interesting paper called “<a href="https://arxiv.org/abs/2111.12548"><span class="underline">AutoDC</span></a>” (presented at the last NeurIPS <a href="https://datacentricai.org/neurips21/"><span class="underline">data-centric AI workshop</span></a>) gave some initial directions on how to approach these questions. I would personally be very interested to see these AutoDC concepts taken to the world of synthetic data, since we would then be able to have fully automated systems that can train neural networks to optimally solve a given task.</p>
-
-<p><img src="https://sebderhy.github.io/impactfulai/assets/img/2022-03-07-Applied-AI-in-a-Data-centric-World/media/image4.png" alt="" /></p>
-
-<blockquote>
-  <p>source: <a href="https://arxiv.org/abs/2111.12548"><span class="underline">AutoDC paper</span></a></p>
-</blockquote>
-
-<h1 id="conclusion">Conclusion</h1>
 
 <p>As you can see, data-centric AI is one of the most exciting areas to work on, as it is both THE most impactful way to perform AI, and it is actually itself full of fascinating AI challenges! If working on those challenges gets you excited, you should definitely <a href="https://datagen.tech/careers/?coref=1.10.uB5_311&amp;t=1645804882946"><span class="underline">talk to us</span></a>!</p>
 
